@@ -24,8 +24,10 @@
                     <li class="nav-item"><a class="nav-link" href="#">My Submissions</a></li>
                 @endif
             </ul>
-
-            <a href="/logout" class="btn btn-outline-light">Logout</a>
+            <form action="/logout" method="POST" class="d-inline">
+    @csrf
+    <button type="submit" class="btn btn-outline-light">Logout</button>
+</form>
         </div>
     </div>
 </nav>
